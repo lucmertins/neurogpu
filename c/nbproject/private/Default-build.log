@@ -1,0 +1,14 @@
+gcc -Wall -c mlpnnets.c
+gcc -Wall -c basictests.c
+basictests.c: In function ‘xor_train_test’:
+basictests.c:155:19: warning: variable ‘l2’ set but not used [-Wunused-but-set-variable]
+     Layer   *l1, *l2;    // layers for manually adjusting weights
+                   ^~
+basictests.c:155:14: warning: variable ‘l1’ set but not used [-Wunused-but-set-variable]
+     Layer   *l1, *l2;    // layers for manually adjusting weights
+              ^~
+gcc -o basic mlpnnets.o basictests.o
+mlpnnets.o: In function `sigmoid':
+mlpnnets.c:(.text+0x1f): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+gmake: *** [Makefile:13: basic] Error 1
