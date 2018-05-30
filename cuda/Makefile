@@ -39,3 +39,4 @@ clean:
 	rm -f testfwd
 	rm -f xor_mlp
 	rm -f iris
+	rm -f adult

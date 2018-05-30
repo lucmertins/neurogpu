@@ -1,0 +1,23 @@
+nvcc -c iris.cu
+iris.cu(133): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(134): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(135): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(178): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(202): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(133): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(134): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(135): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(178): warning: conversion from a string literal to "char *" is deprecated
+
+iris.cu(202): warning: conversion from a string literal to "char *" is deprecated
+
+nvcc -c mlpnnets.cu -lcurand
+nvcc -o iris iris.o mlpnnets.o -lcurand
