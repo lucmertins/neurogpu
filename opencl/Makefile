@@ -123,6 +123,33 @@ iris/fast:
 	$(MAKE) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/build
 .PHONY : iris/fast
 
+src/apiopencl.o: src/apiopencl.cpp.o
+
+.PHONY : src/apiopencl.o
+
+# target to build an object file
+src/apiopencl.cpp.o:
+	$(MAKE) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/src/apiopencl.cpp.o
+.PHONY : src/apiopencl.cpp.o
+
+src/apiopencl.i: src/apiopencl.cpp.i
+
+.PHONY : src/apiopencl.i
+
+# target to preprocess a source file
+src/apiopencl.cpp.i:
+	$(MAKE) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/src/apiopencl.cpp.i
+.PHONY : src/apiopencl.cpp.i
+
+src/apiopencl.s: src/apiopencl.cpp.s
+
+.PHONY : src/apiopencl.s
+
+# target to generate assembly for a file
+src/apiopencl.cpp.s:
+	$(MAKE) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/src/apiopencl.cpp.s
+.PHONY : src/apiopencl.cpp.s
+
 src/iris.o: src/iris.cpp.o
 
 .PHONY : src/iris.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... iris"
 	@echo "... edit_cache"
+	@echo "... src/apiopencl.o"
+	@echo "... src/apiopencl.i"
+	@echo "... src/apiopencl.s"
 	@echo "... src/iris.o"
 	@echo "... src/iris.i"
 	@echo "... src/iris.s"

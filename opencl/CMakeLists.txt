@@ -30,7 +30,7 @@ else()
 endif()
 
 
-add_executable (iris ${PROJECT_SOURCE_DIR}/src/iris.cpp)
+add_executable (iris ${PROJECT_SOURCE_DIR}/src/apiopencl.cpp ${PROJECT_SOURCE_DIR}/src/iris.cpp)
 
 target_link_libraries (iris OpenCL::OpenCL)
 
